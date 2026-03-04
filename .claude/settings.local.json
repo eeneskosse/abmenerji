@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"D:\\\\Projeler2\\\\abmenerji\")",
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(npx --version)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm)",
+      "Bash(npm install framer-motion @heroicons/react clsx)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git add next.config.ts package.json package-lock.json src/app/globals.css src/app/layout.tsx src/app/page.tsx src/app/hakkimizda/ src/app/hizmetlerimiz/ src/app/iletisim/ src/app/projelerimiz/ src/components/ src/hooks/ src/lib/ .claude/)"
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "abmenerji-temp",
+  "name": "abmenerji",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.34.5",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"
