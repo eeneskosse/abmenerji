@@ -9,18 +9,11 @@ import { NAV_LINKS } from "@/lib/constants";
 import { Container } from "@/components/ui/Container";
 
 export function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
-
-  useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", handler, { passive: true });
-    return () => window.removeEventListener("scroll", handler);
-  }, []);
 
   useEffect(() => {
     if (mobileOpen) {
@@ -52,14 +45,8 @@ export function Navbar() {
   return (
     <>
       {/* Top row: Logo + CTA */}
-      <div
-        className={clsx(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          scrolled
-            ? "bg-navy-900/95 backdrop-blur-md shadow-navbar"
-            : "bg-navy-900/80 backdrop-blur-sm"
-        )}
-      >
+      <div className="absolute top-0 left-0 right-0 z-50 bg-navy-900/80 backdrop-blur-sm">
+
         {/* White bottom line */}
         <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-white" />
         <Container>
@@ -84,7 +71,7 @@ export function Navbar() {
             {/* Right side: CTA + hamburger */}
             <div className="flex items-center gap-3">
               <Link
-                href="/iletisim"
+                href="/teklif-alin"
                 className="hidden lg:inline-flex items-center gap-2 px-6 py-2.5 bg-gold-400 text-navy-900 font-heading font-semibold text-sm rounded-lg hover:bg-gold-500 transition-colors"
               >
                 Teklif Alın
@@ -109,14 +96,8 @@ export function Navbar() {
       </div>
 
       {/* Bottom row: Nav links - transparent bg */}
-      <nav
-        className={clsx(
-          "fixed left-0 right-0 z-50 hidden lg:block transition-all duration-300",
-          scrolled
-            ? "top-[4.25rem] bg-navy-800/60 backdrop-blur-sm border-t border-white/5"
-            : "top-[4.25rem] bg-transparent"
-        )}
-      >
+      <nav className="absolute left-0 right-0 z-50 hidden lg:block top-[4.25rem] bg-transparent">
+
         <Container>
           <div className="flex items-center justify-center h-11">
             <div className="flex items-center gap-8 xl:gap-14">
@@ -261,7 +242,7 @@ export function Navbar() {
               )
             )}
             <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.35 }}>
-              <Link href="/iletisim" className="mt-4 inline-flex items-center px-8 py-3 bg-gold-400 text-navy-900 font-heading font-semibold rounded-lg" onClick={() => setMobileOpen(false)}>
+              <Link href="/teklif-alin" className="mt-4 inline-flex items-center px-8 py-3 bg-gold-400 text-navy-900 font-heading font-semibold rounded-lg" onClick={() => setMobileOpen(false)}>
                 Teklif Alın
               </Link>
             </motion.div>
