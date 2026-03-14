@@ -97,6 +97,8 @@ export const PROJECT_CATEGORIES = [
   "Enerji",
   "Altyapı",
   "Güneş Enerjisi",
+  "Aydınlatma",
+  "Şarj İstasyonu",
 ];
 
 export const PROJECTS = [
@@ -135,6 +137,20 @@ export const PROJECTS = [
     title: "Endüstriyel Otomasyon Sistemi",
     category: "Altyapı",
     description: "Üretim hattı SCADA ve otomasyon entegrasyonu",
+  },
+  {
+    id: 7,
+    title: "Aydınlatma Direk Dikimi ve Hat Çekimi",
+    category: "Aydınlatma",
+    description:
+      "Cadde, bulvar ve sanayi bölgelerinde beton ve metal direk dikimi, enerji nakil hattı çekimi ve aydınlatma altyapısı kurulum projesi",
+  },
+  {
+    id: 8,
+    title: "Elektrikli Araç Şarj İstasyonu Kurulumu",
+    category: "Şarj İstasyonu",
+    description:
+      "AC ve DC hızlı şarj istasyonu tedarik, montaj ve devreye alma; otopark ve AVM lokasyonlarında anahtar teslim şarj altyapısı",
   },
 ];
 
