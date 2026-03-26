@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ABM Enerji | Enerji & Altyapı Çözümleri",
+  title: "ABM Enerji",
   description:
     "ABM Enerji - Elektrik tesisat, enerji altyapısı, güneş enerjisi ve endüstriyel otomasyon hizmetleri. Profesyonel enerji çözümleri.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "ABM Enerji",
   ],
   openGraph: {
-    title: "ABM Enerji | Enerji & Altyapı Çözümleri",
+    title: "ABM Enerji",
     description: "Profesyonel enerji ve altyapı çözümleri.",
     locale: "tr_TR",
     type: "website",

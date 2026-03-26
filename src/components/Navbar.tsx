@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { NAV_LINKS } from "@/lib/constants";
@@ -50,22 +51,17 @@ export function Navbar() {
         {/* White bottom line */}
         <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-white" />
         <Container>
-          <div className="flex items-center justify-between h-16 lg:h-[4.25rem]">
+          <div className="flex items-center justify-between h-20 lg:h-[5rem]">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group shrink-0">
-              <div className="w-10 h-10 rounded-md border-2 border-gold-400 flex items-center justify-center bg-navy-800/50 group-hover:bg-gold-400/10 transition-colors">
-                <span className="text-gold-400 font-heading font-bold text-sm">
-                  ABM
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-heading font-bold text-white text-lg leading-tight">
-                  ABM Enerji
-                </span>
-                <span className="text-[0.6rem] text-slate-400 uppercase tracking-[0.2em]">
-                  Enerji & Altyapı
-                </span>
-              </div>
+            <Link href="/" className="shrink-0">
+              <Image
+                src="/abmlogo3-trimmed.png"
+                alt="ABM Enerji Mühendislik"
+                width={260}
+                height={64}
+                className="h-16 w-auto"
+                priority
+              />
             </Link>
 
             {/* Right side: CTA + hamburger */}
@@ -96,7 +92,7 @@ export function Navbar() {
       </div>
 
       {/* Bottom row: Nav links - transparent bg */}
-      <nav className="absolute left-0 right-0 z-50 hidden lg:block top-[4.25rem] bg-transparent">
+      <nav className="absolute left-0 right-0 z-50 hidden lg:block top-[5rem] bg-transparent">
 
         <Container>
           <div className="flex items-center justify-center h-11">

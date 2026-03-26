@@ -94,63 +94,175 @@ export const WHY_US = [
 
 export const PROJECT_CATEGORIES = [
   "Tümü",
-  "Enerji",
-  "Altyapı",
-  "Güneş Enerjisi",
-  "Aydınlatma",
-  "Şarj İstasyonu",
+  "Endüstriyel Tesis",
+  "Kamu & Konut",
+  "Yenilenebilir Enerji",
 ];
 
 export const PROJECTS = [
   {
     id: 1,
-    title: "Organize Sanayi Bölgesi Enerji Hattı",
-    category: "Enerji",
-    description: "250 MW kapasiteli enerji nakil hattı projesi",
+    title: "KNS Otomotiv – Entegre Enerji ve Kesintisiz Güç Sistemleri",
+    category: "Endüstriyel Tesis",
+    description:
+      "Otomotiv sektörünün yüksek hassasiyet gerektiren üretim bandı ihtiyaçlarına yönelik, tesisin tüm enerji altyapısı \"sıfır hata\" prensibiyle projelendirilmiştir.",
+    image: "/projeler/kns-oto-1.jpg",
+    images: ["/projeler/kns-oto-1.jpg", "/projeler/kns-oto-2.jpg"],
+    specs: [
+      { label: "Sektör", value: "Otomotiv" },
+      { label: "Konum", value: "Sakarya" },
+      { label: "Kapsam", value: "Kuvvetli Akım, Trafo, Jeneratör, Yangın Alarm" },
+      { label: "Aydınlatma", value: "LED Endüstriyel Aydınlatma" },
+    ],
+    details: [
+      "Fabrika sahasının enerji yoğunluğuna göre optimize edilmiş kuvvetli akım tesisatı ve verimlilik odaklı LED aydınlatma sistemleri.",
+      "Üretim sürekliliğini korumak adına yüksek kapasiteli trafo merkezi ve enerji kesintilerine karşı anlık devreye giren jeneratör sistemleri entegrasyonu.",
+      "Tesis genelinde hassas algılama kabiliyetine sahip yangın alarm ve erken uyarı sistemleri kurulumu.",
+    ],
   },
   {
     id: 2,
-    title: "Güneş Enerji Santrali Kurulumu",
-    category: "Güneş Enerjisi",
-    description: "10 MW kapasiteli GES kurulumu ve devreye alma",
+    title: "Erensan Çelik – Komple Fabrika ve İdari Bina Elektrik Mühendisliği",
+    category: "Endüstriyel Tesis",
+    description:
+      "Sakarya Arifiye'de konumlanan, toplam 4.431,57 m² kapalı alana sahip dev tesiste, endüstriyel üretim alanları ile modern ofis ihtiyaçları tek bir çatı altında koordine edilmiştir.",
+    image: "/projeler/erensan-1.jpg",
+    images: ["/projeler/erensan-1.jpg", "/projeler/erensan-2.jpg"],
+    specs: [
+      { label: "Toplam Alan", value: "4.431,57 m²" },
+      { label: "Konum", value: "Sakarya Arifiye" },
+      { label: "Kapsam", value: "Endüstriyel Tesisat, Zayıf Akım, Paratoner" },
+      { label: "Tesis Tipi", value: "Fabrika + İdari Bina" },
+    ],
+    details: [
+      "Çelik konstrüksiyon üretiminde gereken yüksek akım ihtiyacını karşılayacak, gerilim düşümü hesaplamaları hassasiyetle yapılmış endüstriyel tesisat.",
+      "Modern çalışma ortamı için zayıf akım (data, telefon, yapısal kablolama) ve iç mimari aydınlatma çözümleri.",
+      "Fabrika binasının yüksek metal yapısı göz önünde bulundurularak, uluslararası standartlarda aktif paratoner sistemi kurulumu.",
+    ],
   },
   {
     id: 3,
-    title: "Fabrika Elektrik Altyapısı",
-    category: "Altyapı",
-    description: "Büyük ölçekli üretim tesisi komple elektrik altyapısı",
+    title: "Şenpiliç Kaynarca – Üretim Hattı Mekanik ve Elektrik Entegrasyonu",
+    category: "Endüstriyel Tesis",
+    description:
+      "Gıda endüstrisinin öncü kuruluşlarından Şenpiliç için mekanik imalat ile elektrik otomasyonu birleştirilmiştir.",
+    image: "/projeler/senplic-kaynarca-1.jpg",
+    images: [
+      "/projeler/senplic-kaynarca-1.jpg",
+      "/projeler/senplic-kaynarca-2.jpg",
+    ],
+    specs: [
+      { label: "Sektör", value: "Gıda Endüstrisi" },
+      { label: "Konum", value: "Sakarya Kaynarca" },
+      { label: "Kapsam", value: "Konveyör İmalatı, ADP, Saha Tesisatı" },
+      { label: "Sistem", value: "Ana Dağıtım Panosu (ADP)" },
+    ],
+    details: [
+      "Üretim akışını modernize eden özel konveyör bandı imalatı ve montaj süreçleri.",
+      "Tüm tesisin enerji kontrolünü sağlayan, yüksek koruma sınıflı bileşenlerle donatılmış Ana Dağıtım Panosu (ADP) tasarımı ve saha tesisat çekimi.",
+    ],
   },
   {
     id: 4,
-    title: "Trafo Merkezi Modernizasyonu",
-    category: "Enerji",
-    description: "Mevcut trafo merkezinin güçlendirme ve modernizasyon çalışması",
+    title: "GSB Sakarya Serdivan Yurdu – Yüksek Kapasiteli Enerji Altyapısı",
+    category: "Kamu & Konut",
+    description:
+      "Gençlik ve Spor Bakanlığı'na bağlı, yüzlerce öğrenciye ev sahipliği yapan bu büyük ölçekli projede kamu ihale şartnamelerine tam uyumlu altyapı inşa edilmiştir.",
+    image: "/projeler/gsb-yurt-1.jpg",
+    images: [
+      "/projeler/gsb-yurt-1.jpg",
+      "/projeler/gsb-yurt-2.jpg",
+      "/projeler/gsb-yurt-3.jpg",
+    ],
+    specs: [
+      { label: "Kat Sayısı", value: "4 Kat" },
+      { label: "Bağımsız Bölüm", value: "75 Adet" },
+      { label: "Kurulu Güç", value: "898.688 W" },
+      { label: "Talep Gücü", value: "300.000 W" },
+    ],
+    details: [
+      "4 katlı mimari yapı içerisinde toplam 75 bağımsız bölümün enerji dağıtımı.",
+      "Toplamda 898.688 W Kurulu Güç ve 300.000 W Talep Gücü yönetimi için özel trafo merkezi kurulumu.",
+      "Bağımsız bölümlerin iç tesisat işlemleri, acil durum aydınlatmaları ve bina enerji yönetim sistemleri anahtar teslim tamamlanmıştır.",
+    ],
   },
   {
     id: 5,
-    title: "Çatı Üstü GES Projesi",
-    category: "Güneş Enerjisi",
-    description: "Ticari bina çatı üstü güneş enerjisi sistemi",
+    title: "Kotanoğlu İnşaat – Korucuk Modern Konut Sitesi",
+    category: "Kamu & Konut",
+    description:
+      "Sakarya Korucuk'un çehresini değiştiren 99 dairelik bu prestijli projede, konfor ve güvenlik teknolojileri ön planda tutulmuştur.",
+    image: "/projeler/kotanoglu-1.jpg",
+    images: ["/projeler/kotanoglu-1.jpg", "/projeler/kotanoglu-2.jpg"],
+    specs: [
+      { label: "Daire Sayısı", value: "99 Daire" },
+      { label: "Konum", value: "Sakarya Korucuk" },
+      { label: "Güneş Paneli", value: "22 Adet" },
+      { label: "Kapsam", value: "Tesisat, Yangın Algılama, GES" },
+    ],
+    details: [
+      "99 dairenin tamamında akıllı sigorta sistemleri ve yüksek kaliteli elektrik-aydınlatma tesisat uygulamaları.",
+      "Tüm blokları kapsayan, merkezi izleme üniteli yangın algılama ve ihbar sistemleri.",
+      "22 adet güneş paneli ile ortak alan aydınlatmalarında yenilenebilir enerji kullanımı.",
+    ],
   },
   {
     id: 6,
-    title: "Endüstriyel Otomasyon Sistemi",
-    category: "Altyapı",
-    description: "Üretim hattı SCADA ve otomasyon entegrasyonu",
+    title: "Söğütlü Villa Grubu – Estetik ve Teknoloji Odaklı Elektrik Projesi",
+    category: "Kamu & Konut",
+    description:
+      "Söğütlü bölgesinde inşa edilen 18 adet bağımsız lüks villanın elektrik mühendisliği süreçleri, modern mimariyle uyumlu şekilde yürütülmüştür.",
+    image: "/projeler/sogutlu-villa-1.jpg",
+    images: ["/projeler/sogutlu-villa-1.jpg", "/projeler/sogutlu-villa-2.jpg"],
+    specs: [
+      { label: "Villa Sayısı", value: "18 Adet" },
+      { label: "Konum", value: "Söğütlü" },
+      { label: "Kapsam", value: "İç Mekan, Bahçe Aydınlatma, Akıllı Ev" },
+      { label: "Koruma", value: "Bağımsız Enerji Panoları" },
+    ],
+    details: [
+      "Villaların iç mekan aydınlatma altyapısı, çevre ve bahçe aydınlatma sistemleri ile akıllı ev sistemlerine hazır altyapı kurulumu.",
+      "Her villa için bağımsız enerji panoları ve güvenli akım koruma çözümleri.",
+    ],
   },
   {
     id: 7,
-    title: "Aydınlatma Direk Dikimi ve Hat Çekimi",
-    category: "Aydınlatma",
+    title: "Serdivan Güneş Enerji Santrali (GES) Projesi",
+    category: "Yenilenebilir Enerji",
     description:
-      "Cadde, bulvar ve sanayi bölgelerinde beton ve metal direk dikimi, enerji nakil hattı çekimi ve aydınlatma altyapısı kurulum projesi",
+      "Sakarya Serdivan'da 1.045,78 m² yüzey alanına sahip, 25 kWe kurulu güç kapasiteli doğa dostu enerji kaynağı devreye alınmıştır.",
+    image: "/projeler/serdivan-ges-1.jpg",
+    images: ["/projeler/serdivan-ges-1.jpg", "/projeler/serdivan-ges-2.jpg"],
+    specs: [
+      { label: "Yüzey Alanı", value: "1.045,78 m²" },
+      { label: "Kurulu Güç", value: "25 kWe" },
+      { label: "Panel Sayısı", value: "45 Adet" },
+      { label: "Konum", value: "Sakarya Serdivan" },
+    ],
+    details: [
+      "Toplam 1.045,78 m² yüzey alanına sahip, 25 kWe kurulu güç kapasiteli GES projesi.",
+      "Maksimum ışınım açısıyla yerleştirilmiş 45 adet yüksek verimli panel.",
+      "İşletme maliyetlerinde tasarruf sağlanırken, karbon salınımının azaltılmasına doğrudan katkı.",
+    ],
   },
   {
     id: 8,
-    title: "Elektrikli Araç Şarj İstasyonu Kurulumu",
-    category: "Şarj İstasyonu",
+    title: "Fluxus Cafe Kırkpınar – Mimari Aydınlatma ve Elektrik Tasarımı",
+    category: "Yenilenebilir Enerji",
     description:
-      "AC ve DC hızlı şarj istasyonu tedarik, montaj ve devreye alma; otopark ve AVM lokasyonlarında anahtar teslim şarj altyapısı",
+      "Kırkpınar'ın estetik dokusuna uygun, ticari prestiji artıran bir aydınlatma ve tesisat projesi hayata geçirilmiştir.",
+    image: "/projeler/fluxus-cafe-1.jpg",
+    images: ["/projeler/fluxus-cafe-1.jpg"],
+    specs: [
+      { label: "Sektör", value: "Gastronomi / Ticari" },
+      { label: "Konum", value: "Kırkpınar" },
+      { label: "Kapsam", value: "Konsept Aydınlatma, Güçlendirilmiş Kablolama" },
+      { label: "Sistem", value: "Elektrik Dağıtım Panoları" },
+    ],
+    details: [
+      "Mekanın atmosferini belirleyen, enerji tasarruflu ancak yüksek görsel kaliteye sahip konsept aydınlatma tasarımları.",
+      "Gastronomi alanındaki yüksek güç çeken mutfak ekipmanları için güçlendirilmiş kablolama ve güvenli elektrik dağıtım panoları.",
+    ],
   },
 ];
 
