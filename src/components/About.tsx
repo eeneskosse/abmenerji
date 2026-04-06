@@ -9,7 +9,7 @@ const values = [
   {
     title: "Misyonumuz",
     description:
-      "Enerji sektöründe sürdürülebilir ve güvenilir çözümler sunarak, müşterilerimizin projelerini en yüksek kalite standartlarında hayata geçirmek.",
+      "Müşteri odaklı hizmet anlayışımızla, sektöre özel ihtiyaçlara yönelik kaliteli, güvenilir ve yenilikçi endüstriyel çözümleri; zamanında, eksiksiz ve sürdürülebilir bir şekilde sunmaktır.",
   },
   {
     title: "Vizyonumuz",
@@ -61,7 +61,7 @@ export function About() {
             {/* Experience badge */}
             <div className="absolute -bottom-6 -left-4 sm:left-auto sm:-right-6 bg-navy-800 rounded-xl px-6 py-4 shadow-lg">
               <p className="font-heading text-3xl font-bold text-gold-400">
-                15+
+                4+
               </p>
               <p className="text-slate-300 text-sm font-body">Yıllık Deneyim</p>
             </div>
@@ -72,7 +72,7 @@ export function About() {
             <SectionHeading
               kicker="Hakkımızda"
               title="Güvenilir Enerji Çözüm Ortağınız"
-              description="ABM Enerji olarak, enerji sektöründe 15 yılı aşkın deneyimimizle endüstriyel ve ticari projelerde kapsamlı çözümler sunuyoruz. Uzman kadromuz ve modern ekipmanlarımızla her projede kaliteyi ön planda tutuyoruz."
+              description="ABM Enerji olarak, 2022 yılından bu yana enerji sektöründe endüstriyel ve ticari projelerde kapsamlı çözümler sunuyoruz. Uzman kadromuz ve modern ekipmanlarımızla her projede kaliteyi ön planda tutuyoruz."
             />
 
             <motion.div
@@ -83,8 +83,7 @@ export function About() {
               className="mt-8 space-y-4"
             >
               {[
-                "ISO 9001 kalite yönetim sistemi sertifikası",
-                "Alanında uzman 120+ mühendis ve teknisyen",
+                "Endüstriyel ve ticari projelerde anahtar teslim çözümler",
                 "Türkiye genelinde proje teslim kapasitesi",
                 "Çevre dostu ve sürdürülebilir enerji yaklaşımı",
               ].map((item) => (

@@ -167,13 +167,8 @@ export function Hero() {
               </div>
               <div className="w-px h-10 bg-slate-700" />
               <div className="flex flex-col">
-                <span className="font-heading text-2xl font-bold text-white">15+</span>
+                <span className="font-heading text-2xl font-bold text-white">4+</span>
                 <span className="text-xs uppercase tracking-wider">Yıl Deneyim</span>
-              </div>
-              <div className="w-px h-10 bg-slate-700" />
-              <div className="flex flex-col">
-                <span className="font-heading text-2xl font-bold text-white">%100</span>
-                <span className="text-xs uppercase tracking-wider">Müşteri Memnuniyeti</span>
               </div>
             </div>
           </div>

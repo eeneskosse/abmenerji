@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { NAV_LINKS, SERVICES, COMPANY_INFO } from "@/lib/constants";
 
@@ -8,15 +9,14 @@ export function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12 border-b border-slate-800">
           {/* Column 1: Logo + Description */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-9 h-9 rounded-md border-2 border-gold-400 flex items-center justify-center">
-                <span className="text-gold-400 font-heading font-bold text-xs">
-                  ABM
-                </span>
-              </div>
-              <span className="font-heading font-bold text-white text-lg">
-                ABM Enerji
-              </span>
+            <div className="mb-5">
+              <Image
+                src="/abmlogo3-trimmed.png"
+                alt="ABM Enerji"
+                width={160}
+                height={50}
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-slate-400 font-body text-sm leading-relaxed max-w-xs">
               Enerji sektöründe güvenilir çözüm ortağınız. Profesyonel ekibimizle

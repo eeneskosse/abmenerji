@@ -60,9 +60,7 @@ export const SERVICES = [
 
 export const STATS = [
   { value: 500, suffix: "+", label: "Tamamlanan Proje" },
-  { value: 15, suffix: "+", label: "Yıllık Deneyim" },
-  { value: 120, suffix: "+", label: "Uzman Kadro" },
-  { value: 50, suffix: "+", label: "Aktif Müşteri" },
+  { value: 4, suffix: "+", label: "Yıllık Deneyim" },
 ];
 
 export const WHY_US = [
@@ -268,8 +266,8 @@ export const PROJECTS = [
 
 export const COMPANY_INFO = {
   name: "ABM Enerji",
-  address: "Organize Sanayi Bölgesi, İstanbul, Türkiye",
-  phone: "+90 (212) 000 00 00",
+  address: "Erenler Mh. 1201. Sk. No:5 Erenler, Sakarya",
+  phone: "+90 538 503 38 81",
   email: "info@abmenerji.com",
   workingHours: "Pazartesi - Cumartesi: 08:00 - 18:00",
 };
