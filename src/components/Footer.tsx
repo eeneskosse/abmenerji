@@ -25,14 +25,19 @@ export function Footer() {
 
             {/* Social links */}
             <div className="flex gap-3 mt-6">
-              {["linkedin", "instagram", "twitter"].map((social) => (
+              {[
+                { name: "linkedin", url: "https://www.linkedin.com/company/abm-enerji%CC%87i%CC%87-m%C3%BChendi%CC%87sli%CC%87k/?originalSubdomain=tr" },
+                { name: "instagram", url: "https://www.instagram.com/abmenerji/" },
+              ].map((social) => (
                 <a
-                  key={social}
-                  href="#"
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 rounded-lg bg-navy-800 flex items-center justify-center text-slate-400 hover:text-gold-400 hover:bg-navy-700 transition-colors"
-                  aria-label={social}
+                  aria-label={social.name}
                 >
-                  <SocialIcon name={social} />
+                  <SocialIcon name={social.name} />
                 </a>
               ))}
             </div>
@@ -107,16 +112,16 @@ export function Footer() {
           </p>
           <div className="flex gap-6">
             <a
-              href="#"
+              href="/gizlilik-politikasi"
               className="text-slate-500 font-body text-sm hover:text-slate-300 transition-colors"
             >
               Gizlilik Politikası
             </a>
             <a
-              href="#"
+              href="/cerez-aydinlatma"
               className="text-slate-500 font-body text-sm hover:text-slate-300 transition-colors"
             >
-              Kullanım Şartları
+              Çerez Aydınlatma
             </a>
           </div>
         </div>

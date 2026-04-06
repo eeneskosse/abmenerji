@@ -153,12 +153,18 @@ export function Contact() {
               </div>
             ))}
 
-            {/* Map placeholder */}
-            <div className="mt-8 aspect-[4/3] bg-slate-100 rounded-xl flex items-center justify-center border border-slate-200">
-              <div className="text-center">
-                <MapPinIcon className="w-8 h-8 text-slate-300 mx-auto mb-2" />
-                <p className="text-slate-400 text-sm font-body">Harita Alanı</p>
-              </div>
+            {/* Google Maps */}
+            <div className="mt-8 aspect-[4/3] rounded-xl overflow-hidden border border-slate-200">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.0167289136084!2d30.408340676708292!3d40.73982187138948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccb362c7efe551%3A0x286b61b943cb755c!2zQUJNIEVORVJKxLAgTcOcSEVORMSwU0zEsEs!5e1!3m2!1str!2sus!4v1775494417788!5m2!1str!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="ABM Enerji Konum - Erenler, Sakarya"
+              />
             </div>
           </motion.div>
         </motion.div>
