@@ -3,6 +3,7 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 
 const outfit = Outfit({
   subsets: ["latin", "latin-ext"],
@@ -18,21 +19,47 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ABM Enerji",
+  title: {
+    default: "ABM Enerji Mühendislik",
+    template: "%s | ABM Enerji",
+  },
   description:
-    "ABM Enerji - Elektrik tesisat, enerji altyapısı, güneş enerjisi ve endüstriyel otomasyon hizmetleri. Profesyonel enerji çözümleri.",
+    "ABM Enerji Mühendislik - Elektrik tesisat, enerji altyapısı, güneş enerjisi ve endüstriyel otomasyon hizmetleri. Sakarya merkezli profesyonel enerji çözümleri.",
   keywords: [
     "enerji",
     "elektrik tesisat",
     "güneş enerjisi",
     "altyapı",
     "ABM Enerji",
+    "Sakarya enerji",
+    "endüstriyel elektrik",
+    "GES kurulumu",
   ],
+  icons: {
+    icon: "/abmlogo-icon.png",
+    apple: "/abmlogo-icon.png",
+  },
   openGraph: {
-    title: "ABM Enerji",
-    description: "Profesyonel enerji ve altyapı çözümleri.",
+    title: "ABM Enerji Mühendislik",
+    description: "Elektrik tesisat, enerji altyapısı ve güneş enerjisi alanlarında profesyonel çözümler.",
     locale: "tr_TR",
     type: "website",
+    url: "https://abmenerji.com",
+    siteName: "ABM Enerji",
+    images: [
+      {
+        url: "/abm-logo.png",
+        width: 800,
+        height: 800,
+        alt: "ABM Enerji Mühendislik",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ABM Enerji Mühendislik",
+    description: "Profesyonel enerji ve altyapı çözümleri.",
+    images: ["/abm-logo.png"],
   },
 };
 
@@ -45,7 +72,7 @@ export default function RootLayout({
     <html lang="tr">
       <body className={`${outfit.variable} ${inter.variable} antialiased`}>
         <Navbar />
-        <main>{children}</main>
+        <main><PageTransition>{children}</PageTransition></main>
         <Footer />
       </body>
     </html>

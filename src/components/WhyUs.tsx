@@ -26,7 +26,7 @@ export function WhyUs() {
         <SectionHeading
           kicker="Neden Biz?"
           title="ABM Enerji Farkı"
-          description="500'den fazla başarılı proje, 15 yılı aşkın sektör deneyimi ve müşteri odaklı yaklaşımımızla her projede fark yaratıyoruz."
+          description="500'den fazla başarılı proje ve müşteri odaklı yaklaşımımızla her projede fark yaratıyoruz."
           centered
         />
 

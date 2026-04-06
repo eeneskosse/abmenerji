@@ -8,7 +8,7 @@ import { IMAGES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Hakkımızda | ABM Enerji",
   description:
-    "ABM Enerji hakkında bilgi edinin. 15 yılı aşkın deneyimimizle enerji sektöründe güvenilir çözüm ortağınızız.",
+    "ABM Enerji Mühendislik hakkında bilgi edinin. Enerji sektöründe kaliteli ve güvenilir çözüm ortağınız.",
 };
 
 export default function HakkimizdaPage() {
@@ -16,7 +16,7 @@ export default function HakkimizdaPage() {
     <>
       <PageBanner
         title="Hakkımızda"
-        subtitle="15 yılı aşkın deneyimimizle enerji sektöründe güvenilir çözümler sunuyoruz."
+        subtitle="Enerji sektöründe kaliteli, güvenilir ve yenilikçi çözümler sunuyoruz."
         backgroundImage={IMAGES.aboutBanner}
         breadcrumbs={[{ label: "Hakkımızda" }]}
       />

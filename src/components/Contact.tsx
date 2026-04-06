@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   MapPinIcon,
@@ -36,6 +37,45 @@ const contactDetails = [
 ];
 
 export function Contact() {
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMsg("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      const result = await res.json();
+
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+        setErrorMsg(result.error || "Bir hata oluştu.");
+      }
+    } catch {
+      setStatus("error");
+      setErrorMsg("Bağlantı hatası. Lütfen tekrar deneyiniz.");
+    }
+  }
+
   return (
     <section className="py-20 md:py-28 lg:py-32 bg-white">
       <Container>
@@ -54,24 +94,28 @@ export function Contact() {
         >
           {/* Contact Form */}
           <motion.div variants={fadeUp} className="lg:col-span-3">
-            <form className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm font-body font-medium text-navy-700 mb-1.5">
-                    Ad Soyad
+                    Ad Soyad *
                   </label>
                   <input
                     type="text"
+                    name="name"
+                    required
                     placeholder="Adınız Soyadınız"
                     className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg font-body text-navy-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gold-400/40 focus:border-gold-400 transition-colors"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-body font-medium text-navy-700 mb-1.5">
-                    E-posta
+                    E-posta *
                   </label>
                   <input
                     type="email"
+                    name="email"
+                    required
                     placeholder="ornek@email.com"
                     className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg font-body text-navy-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gold-400/40 focus:border-gold-400 transition-colors"
                   />
@@ -80,11 +124,13 @@ export function Contact() {
 
               <div>
                 <label className="block text-sm font-body font-medium text-navy-700 mb-1.5">
-                  Telefon
+                  Telefon *
                 </label>
                 <input
                   type="tel"
-                  placeholder="+90 (___) ___ __ __"
+                  name="phone"
+                  required
+                  placeholder="0 (5XX) XXX XX XX"
                   className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg font-body text-navy-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gold-400/40 focus:border-gold-400 transition-colors"
                 />
               </div>
@@ -93,7 +139,10 @@ export function Contact() {
                 <label className="block text-sm font-body font-medium text-navy-700 mb-1.5">
                   Konu
                 </label>
-                <select className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg font-body text-navy-800 focus:outline-none focus:ring-2 focus:ring-gold-400/40 focus:border-gold-400 transition-colors appearance-none cursor-pointer">
+                <select
+                  name="subject"
+                  className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg font-body text-navy-800 focus:outline-none focus:ring-2 focus:ring-gold-400/40 focus:border-gold-400 transition-colors appearance-none cursor-pointer"
+                >
                   <option value="">Konu Seçiniz</option>
                   <option value="teklif">Teklif Talebi</option>
                   <option value="bilgi">Bilgi Alma</option>
@@ -104,20 +153,35 @@ export function Contact() {
 
               <div>
                 <label className="block text-sm font-body font-medium text-navy-700 mb-1.5">
-                  Mesajınız
+                  Mesajınız *
                 </label>
                 <textarea
+                  name="message"
+                  required
                   rows={5}
                   placeholder="Projeniz hakkında bilgi verin..."
                   className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg font-body text-navy-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gold-400/40 focus:border-gold-400 transition-colors resize-none"
                 />
               </div>
 
+              {status === "success" && (
+                <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-700 font-body text-sm">
+                  Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.
+                </div>
+              )}
+
+              {status === "error" && (
+                <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 font-body text-sm">
+                  {errorMsg}
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-gold-400 text-navy-900 font-heading font-semibold rounded-lg hover:bg-gold-500 active:bg-gold-600 transition-colors shadow-sm hover:shadow-md cursor-pointer"
+                disabled={status === "loading"}
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-gold-400 text-navy-900 font-heading font-semibold rounded-lg hover:bg-gold-500 active:bg-gold-600 transition-colors shadow-sm hover:shadow-md cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Mesaj Gönder
+                {status === "loading" ? "Gönderiliyor..." : "Mesaj Gönder"}
                 <svg
                   className="w-4 h-4 ml-2"
                   fill="none"

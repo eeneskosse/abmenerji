@@ -39,7 +39,7 @@ export function About() {
           >
             <div className="aspect-[3/4] sm:aspect-[4/5] bg-white rounded-xl overflow-hidden flex items-center justify-center p-8">
               <Image
-                src="/ABM LOGO.png"
+                src="/abm-logo.png"
                 alt="ABM Enerji Mühendislik"
                 width={800}
                 height={800}

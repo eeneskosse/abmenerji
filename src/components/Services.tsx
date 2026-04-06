@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   BoltIcon,
@@ -48,7 +49,7 @@ export function Services() {
               <motion.div
                 key={service.id}
                 variants={fadeUp}
-                className="group relative bg-white rounded-xl p-7 lg:p-8 shadow-card hover:shadow-card-hover transition-shadow duration-300"
+                className="group relative bg-white rounded-xl p-7 lg:p-8 shadow-card hover:shadow-card-hover transition-shadow duration-300 flex flex-col"
               >
                 {/* Gold top border on hover */}
                 <div className="absolute top-0 left-0 right-0 h-[3px] bg-gold-400 rounded-t-xl scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
@@ -60,11 +61,14 @@ export function Services() {
                 <h3 className="font-heading text-lg font-semibold text-navy-800 mb-2.5">
                   {service.title}
                 </h3>
-                <p className="text-slate-500 font-body text-[0.9375rem] leading-relaxed mb-5">
+                <p className="text-slate-500 font-body text-[0.9375rem] leading-relaxed mb-5 flex-1">
                   {service.description}
                 </p>
 
-                <span className="inline-flex items-center text-gold-600 font-body font-medium text-sm gap-1.5 group-hover:gap-2.5 transition-all duration-200">
+                <Link
+                  href="/iletisim"
+                  className="inline-flex items-center text-gold-600 font-body font-medium text-sm gap-1.5 group-hover:gap-2.5 transition-all duration-200 mt-auto"
+                >
                   Detaylı Bilgi
                   <svg
                     className="w-4 h-4"
@@ -79,7 +83,7 @@ export function Services() {
                       d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
                     />
                   </svg>
-                </span>
+                </Link>
               </motion.div>
             );
           })}

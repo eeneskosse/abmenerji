@@ -22,6 +22,18 @@ const slides = [
   {
     id: 2,
     image:
+      "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1920&q=80",
+    kicker: "Elektrikli Araç Altyapısı",
+    title: "Şarj İstasyonu",
+    titleHighlight: "Kurulum & Altyapı",
+    description:
+      "AC ve DC elektrikli araç şarj istasyonu kurulumu, altyapı projelendirme ve bakım hizmetleri ile geleceğin ulaşımına hazırız.",
+    primaryBtn: { text: "Detaylı Bilgi", href: "/hizmetlerimiz" },
+    secondaryBtn: { text: "Teklif Alın", href: "/teklif-alin" },
+  },
+  {
+    id: 3,
+    image:
       "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80",
     kicker: "Sürdürülebilir Enerji",
     title: "Güneş Enerjisi",
@@ -32,7 +44,7 @@ const slides = [
     secondaryBtn: { text: "Projelerimiz", href: "/projelerimiz" },
   },
   {
-    id: 3,
+    id: 4,
     image:
       "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80",
     kicker: "Endüstriyel Çözümler",

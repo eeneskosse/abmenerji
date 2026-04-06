@@ -67,7 +67,7 @@ export const WHY_US = [
   {
     title: "Deneyimli Kadro",
     description:
-      "120'den fazla elektrik mühendisi, enerji uzmanı ve saha teknisyeninden oluşan kadromuz, sektördeki 15 yılı aşkın birikimle her projeye hakim. Ekibimiz düzenli olarak sertifikasyon programlarına katılarak güncel teknolojileri takip eder.",
+      "Alanında uzman elektrik mühendisleri, enerji danışmanları ve saha teknisyenlerinden oluşan kadromuzla her projeye özenle yaklaşıyoruz. Ekibimiz güncel mevzuat ve teknolojileri yakından takip ederek size en doğru çözümü sunar.",
     icon: "users" as const,
   },
   {
