@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
 
     await transporter.sendMail({
       from: `"ABM Enerji Web" <${process.env.SMTP_USER}>`,
-      to: "info@abmenerji.com",
+      to: "info@abmenergy.com.tr",
       subject: `İletişim Formu: ${subjectMap[subject] || "Genel"} - ${name}`,
       html: `
         <h2>Yeni İletişim Formu Mesajı</h2>

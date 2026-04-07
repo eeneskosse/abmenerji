@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description: "Elektrik tesisat, enerji altyapısı ve güneş enerjisi alanlarında profesyonel çözümler.",
     locale: "tr_TR",
     type: "website",
-    url: "https://abmenerji.com",
+    url: "https://abmenergy.com.tr",
     siteName: "ABM Enerji",
     images: [
       {

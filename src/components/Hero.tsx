@@ -10,7 +10,7 @@ const slides = [
   {
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920&q=80",
+      "/images/hero-1.jpg",
     kicker: "Enerji & Altyapı Çözümleri",
     title: "Enerjinize",
     titleHighlight: "Güç Katıyoruz",
@@ -22,7 +22,7 @@ const slides = [
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1920&q=80",
+      "/images/hero-2.jpg",
     kicker: "Elektrikli Araç Altyapısı",
     title: "Şarj İstasyonu",
     titleHighlight: "Kurulum & Altyapı",
@@ -34,7 +34,7 @@ const slides = [
   {
     id: 3,
     image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80",
+      "/images/hero-3.jpg",
     kicker: "Sürdürülebilir Enerji",
     title: "Güneş Enerjisi",
     titleHighlight: "Sistemleri",
@@ -46,7 +46,7 @@ const slides = [
   {
     id: 4,
     image:
-      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80",
+      "/images/hero-4.jpg",
     kicker: "Endüstriyel Çözümler",
     title: "Endüstriyel",
     titleHighlight: "Otomasyon",

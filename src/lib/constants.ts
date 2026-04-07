@@ -268,22 +268,16 @@ export const COMPANY_INFO = {
   name: "ABM Enerji",
   address: "Erenler Mh. 1201. Sk. No:5 Erenler, Sakarya",
   phone: "+90 538 503 38 81",
-  email: "info@abmenerji.com",
+  email: "info@abmenergy.com.tr",
   workingHours: "Pazartesi - Cumartesi: 08:00 - 18:00",
 };
 
 // Unsplash stok fotoğraf URL'leri (sonradan gerçek fotoğraflarla değiştirilecek)
 export const IMAGES = {
-  heroBg:
-    "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920&q=80",
-  aboutBanner:
-    "https://images.unsplash.com/photo-1560472355-536de3962603?w=1920&q=80",
-  servicesBanner:
-    "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80",
-  projectsBanner:
-    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80",
-  contactBanner:
-    "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80",
-  ctaBg:
-    "https://images.unsplash.com/photo-1548337138-e87d889cc369?w=1920&q=80",
+  heroBg: "/images/hero-1.jpg",
+  aboutBanner: "/images/about-banner.jpg",
+  servicesBanner: "/images/services-banner.jpg",
+  projectsBanner: "/images/projects-banner.jpg",
+  contactBanner: "/images/contact-banner.jpg",
+  ctaBg: "/images/cta-bg.jpg",
 };

@@ -26,7 +26,7 @@ export default function CerezAydinlatmaPage() {
 
             <h2>Çerez Aydınlatma Metni</h2>
             <p>
-              ABM Enerji Mühendislik (&quot;Şirket&quot;) olarak, abmenerji.com adresindeki internet sitemizde
+              ABM Enerji Mühendislik (&quot;Şirket&quot;) olarak, abmenergy.com.tr adresindeki internet sitemizde
               çerezler kullanmaktayız. İşbu Çerez Aydınlatma Metni, 6698 sayılı Kişisel Verilerin Korunması
               Kanunu&apos;nun (&quot;KVK Kanunu&quot;) 10. maddesi kapsamında veri sorumlusu sıfatıyla Şirket
               tarafından hazırlanmıştır.
@@ -129,7 +129,7 @@ export default function CerezAydinlatmaPage() {
               aşağıdaki kanallardan bize ulaşabilirsiniz:
             </p>
             <ul>
-              <li><strong>E-posta:</strong> <a href="mailto:info@abmenerji.com" className="text-gold-600 hover:text-gold-700">info@abmenerji.com</a></li>
+              <li><strong>E-posta:</strong> <a href="mailto:info@abmenergy.com.tr" className="text-gold-600 hover:text-gold-700">info@abmenergy.com.tr</a></li>
               <li><strong>Telefon:</strong> +90 538 503 38 81</li>
               <li><strong>Adres:</strong> Erenler Mh. 1201. Sk. No:5 Erenler, Sakarya</li>
             </ul>

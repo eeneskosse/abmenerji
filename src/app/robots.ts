@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://abmenerji.com/sitemap.xml",
+    sitemap: "https://abmenergy.com.tr/sitemap.xml",
   };
 }
