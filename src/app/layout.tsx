@@ -19,6 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://abmenergy.com.tr"),
   title: {
     default: "ABM Enerji Mühendislik",
     template: "%s | ABM Enerji",
