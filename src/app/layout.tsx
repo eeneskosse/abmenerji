@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "ABM Enerji",
     images: [
       {
-        url: "/logoyapistirma.png",
+        url: "/logoyapistirma2.png",
         width: 1200,
         height: 630,
         alt: "ABM Enerji Mühendislik",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ABM Enerji Mühendislik",
     description: "Profesyonel enerji ve altyapı çözümleri.",
-    images: ["/logoyapistirma.png"],
+    images: ["/logoyapistirma2.png"],
   },
 };
 
