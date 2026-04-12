@@ -59,7 +59,8 @@ export function Navbar() {
                 alt="ABM Enerji Mühendislik"
                 width={260}
                 height={64}
-                className="h-16 w-auto"
+                className="h-16"
+                style={{ width: "auto" }}
                 priority
               />
             </Link>

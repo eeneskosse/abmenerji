@@ -9,8 +9,8 @@ import { Button } from "@/components/ui/Button";
 const slides = [
   {
     id: 1,
-    image:
-      "/images/hero-1.jpg",
+    image: "/images/hero-1.jpg",
+    imagePosition: "center center",
     kicker: "Enerji & Altyapı Çözümleri",
     title: "Enerjinize",
     titleHighlight: "Güç Katıyoruz",
@@ -21,8 +21,8 @@ const slides = [
   },
   {
     id: 2,
-    image:
-      "/images/hero-2.jpg",
+    image: "/images/hero-2.jpg",
+    imagePosition: "70% center",
     kicker: "Elektrikli Araç Altyapısı",
     title: "Şarj İstasyonu",
     titleHighlight: "Kurulum & Altyapı",
@@ -33,8 +33,8 @@ const slides = [
   },
   {
     id: 3,
-    image:
-      "/images/hero-3.jpg",
+    image: "/images/hero-3.jpg",
+    imagePosition: "center center",
     kicker: "Sürdürülebilir Enerji",
     title: "Güneş Enerjisi",
     titleHighlight: "Sistemleri",
@@ -45,8 +45,8 @@ const slides = [
   },
   {
     id: 4,
-    image:
-      "/images/hero-4.jpg",
+    image: "/images/hero-4.jpg",
+    imagePosition: "center center",
     kicker: "Endüstriyel Çözümler",
     title: "Endüstriyel",
     titleHighlight: "Otomasyon",
@@ -103,7 +103,7 @@ export function Hero() {
 
   return (
     <section
-      className="relative h-screen min-h-[700px] max-h-[1000px] overflow-hidden"
+      className="relative h-screen min-h-[580px] md:min-h-[700px] max-h-[1000px] overflow-hidden"
       onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
     >
@@ -126,10 +126,11 @@ export function Hero() {
             src={slide.image}
             alt=""
             fill
-            className="object-cover"
+            className="object-cover object-center md:object-center"
             priority
             sizes="100vw"
-            quality={85}
+            quality={75}
+            style={{ objectPosition: slide.imagePosition || "center center" }}
           />
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-900/80 to-navy-900/60" />
@@ -139,7 +140,7 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
         <Container>
-          <div className="max-w-2xl pt-16">
+          <div className="max-w-2xl pt-8 md:pt-16">
             <AnimatePresence mode="wait">
               <motion.div
                 key={slide.id}
@@ -148,19 +149,19 @@ export function Hero() {
                 exit={{ opacity: 0, y: -15 }}
                 transition={{ duration: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
               >
-                <div className="w-16 h-[3px] bg-gold-400 mb-7" />
-                <p className="text-gold-400 font-body text-sm uppercase tracking-[0.2em] font-medium mb-4">
+                <div className="w-12 md:w-16 h-[3px] bg-gold-400 mb-5 md:mb-7" />
+                <p className="text-gold-400 font-body text-xs md:text-sm uppercase tracking-[0.2em] font-medium mb-3 md:mb-4">
                   {slide.kicker}
                 </p>
-                <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-[3.75rem] font-extrabold text-white tracking-tight leading-[1.08] mb-6">
+                <h1 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-[3.75rem] font-extrabold text-white tracking-tight leading-[1.08] mb-4 md:mb-6">
                   {slide.title}
                   <br />
                   <span className="text-gold-400">{slide.titleHighlight}</span>
                 </h1>
-                <p className="text-slate-300 text-lg md:text-xl max-w-lg leading-relaxed mb-10 font-body">
+                <p className="text-slate-300 text-base md:text-xl max-w-lg leading-relaxed mb-6 md:mb-10 font-body">
                   {slide.description}
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                   <Button variant="primary" href={slide.primaryBtn.href}>
                     {slide.primaryBtn.text}
                   </Button>
@@ -172,14 +173,14 @@ export function Hero() {
             </AnimatePresence>
 
             {/* Trust indicators */}
-            <div className="mt-14 flex items-center gap-8 text-slate-500">
+            <div className="mt-8 md:mt-14 flex items-center gap-6 md:gap-8 text-slate-500">
               <div className="flex flex-col">
-                <span className="font-heading text-2xl font-bold text-white">500+</span>
+                <span className="font-heading text-xl md:text-2xl font-bold text-white">500+</span>
                 <span className="text-xs uppercase tracking-wider">Proje</span>
               </div>
-              <div className="w-px h-10 bg-slate-700" />
+              <div className="w-px h-8 md:h-10 bg-slate-700" />
               <div className="flex flex-col">
-                <span className="font-heading text-2xl font-bold text-white">4+</span>
+                <span className="font-heading text-xl md:text-2xl font-bold text-white">4+</span>
                 <span className="text-xs uppercase tracking-wider">Yıl Deneyim</span>
               </div>
             </div>
@@ -190,7 +191,7 @@ export function Hero() {
       {/* Left / Right arrows */}
       <button
         onClick={() => paginate(-1)}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-transparent flex items-center justify-center text-white/70 hover:text-gold-400 transition-all duration-200 cursor-pointer group"
+        className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-transparent flex items-center justify-center text-white/70 hover:text-gold-400 transition-all duration-200 cursor-pointer group"
         aria-label="Önceki"
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -199,7 +200,7 @@ export function Hero() {
       </button>
       <button
         onClick={() => paginate(1)}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-transparent flex items-center justify-center text-white/70 hover:text-gold-400 transition-all duration-200 cursor-pointer group"
+        className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-transparent flex items-center justify-center text-white/70 hover:text-gold-400 transition-all duration-200 cursor-pointer group"
         aria-label="Sonraki"
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
