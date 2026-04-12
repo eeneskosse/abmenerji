@@ -105,7 +105,7 @@ export default function GizlilikPolitikasiPage() {
               <li>Kişisel verilerinizin silinmesini veya yok edilmesini isteme</li>
             </ul>
             <p>
-              Bu haklarınızı kullanmak için <a href="mailto:info@abmenergy.com.tr" className="text-gold-600 hover:text-gold-700">info@abmenergy.com.tr</a> adresinden
+              Bu haklarınızı kullanmak için <a href="mailto:info@abmenerji.com" className="text-gold-600 hover:text-gold-700">info@abmenerji.com</a> adresinden
               bize ulaşabilirsiniz.
             </p>
 
@@ -114,7 +114,7 @@ export default function GizlilikPolitikasiPage() {
               Gizlilik politikamız hakkında sorularınız için aşağıdaki kanallardan bize ulaşabilirsiniz:
             </p>
             <ul>
-              <li><strong>E-posta:</strong> info@abmenergy.com.tr</li>
+              <li><strong>E-posta:</strong> info@abmenerji.com</li>
               <li><strong>Telefon:</strong> +90 538 503 38 81</li>
               <li><strong>Adres:</strong> Erenler Mh. 1201. Sk. No:5 Erenler, Sakarya</li>
             </ul>

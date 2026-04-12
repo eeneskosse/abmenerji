@@ -95,6 +95,7 @@ export const PROJECT_CATEGORIES = [
   "Endüstriyel Tesis",
   "Kamu & Konut",
   "Yenilenebilir Enerji",
+  "Şarj İstasyonu",
 ];
 
 export const PROJECTS = [
@@ -262,13 +263,40 @@ export const PROJECTS = [
       "Gastronomi alanındaki yüksek güç çeken mutfak ekipmanları için güçlendirilmiş kablolama ve güvenli elektrik dağıtım panoları.",
     ],
   },
+  {
+    id: 9,
+    title: "Elektrikli Araç Şarj İstasyonu Kurulumu",
+    category: "Şarj İstasyonu",
+    description:
+      "Elektrikli araç kullanımının hızla yaygınlaştığı günümüzde, AC ve DC şarj istasyonlarının altyapı projelendirmesinden kurulumuna kadar anahtar teslim çözümler sunuyoruz.",
+    image: "/projeler/sarjistasyonu-1.jpg",
+    images: [
+      "/projeler/sarjistasyonu-1.jpg",
+      "/projeler/sarjistasyonu-2.jpg",
+      "/projeler/sarjistasyonu-3.jpg",
+      "/projeler/sarjistasyonu-4.jpg",
+      "/projeler/sarjistasyonu-5.jpg",
+    ],
+    specs: [
+      { label: "Kapasite", value: "AC 22 kW / DC 120 kW" },
+      { label: "Konum", value: "Sakarya" },
+      { label: "Kapsam", value: "Altyapı, Kurulum, Devreye Alma" },
+      { label: "Uyumluluk", value: "CCS2 / Type 2" },
+    ],
+    details: [
+      "Elektrik altyapı analizi, trafo kapasitesi değerlendirmesi ve şarj istasyonu yerleşim planlaması.",
+      "AC ve DC şarj ünitelerinin montajı, kablolama ve topraklama işlemleri.",
+      "Şarj istasyonlarının devreye alınması, test edilmesi ve kullanıma hazır hale getirilmesi.",
+      "Kurulum sonrası periyodik bakım ve teknik destek hizmeti.",
+    ],
+  },
 ];
 
 export const COMPANY_INFO = {
   name: "ABM Enerji",
   address: "Erenler Mh. 1201. Sk. No:5 Erenler, Sakarya",
   phone: "+90 538 503 38 81",
-  email: "info@abmenergy.com.tr",
+  email: "info@abmenerji.com",
   workingHours: "Pazartesi - Cumartesi: 08:00 - 18:00",
 };
 

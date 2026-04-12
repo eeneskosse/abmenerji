@@ -129,7 +129,7 @@ export default function CerezAydinlatmaPage() {
               aşağıdaki kanallardan bize ulaşabilirsiniz:
             </p>
             <ul>
-              <li><strong>E-posta:</strong> <a href="mailto:info@abmenergy.com.tr" className="text-gold-600 hover:text-gold-700">info@abmenergy.com.tr</a></li>
+              <li><strong>E-posta:</strong> <a href="mailto:info@abmenerji.com" className="text-gold-600 hover:text-gold-700">info@abmenerji.com</a></li>
               <li><strong>Telefon:</strong> +90 538 503 38 81</li>
               <li><strong>Adres:</strong> Erenler Mh. 1201. Sk. No:5 Erenler, Sakarya</li>
             </ul>
